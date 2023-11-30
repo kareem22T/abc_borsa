@@ -1,0 +1,12 @@
+{
+  "name": "abc_borsa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch_main": "sass --watch assets/sass/main.scss:assets/css/main.css --style expanded"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
