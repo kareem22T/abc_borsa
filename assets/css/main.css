@@ -12,7 +12,6 @@
 body {
   width: 100vw;
   overflow: hidden auto;
-  padding-bottom: 5rem;
 }
 
 .head-light {
@@ -57,7 +56,7 @@ body {
   background-color: #dcdcdc;
 }
 
-.flex-center, header nav.top .container .right .links a, header nav.top .container .left, header nav.top .container .left .links, header nav.top .container .left .links .countries .choosed, header nav.top .container .left .links .lang, header nav.top .container .left .links .profile, header nav.top .container .left .social .links, header nav.top .container .left .settings .settings_links .choosed, header nav.bottom .container, header nav.bottom .container .right .links, header nav.bottom .container .left, header .head .container, section > .container .top_ad, section > .container .prices, section > .container .prices > div, section > .container .prices h2, section > .container .prices h4, section > .container .main_articles .mainSlider .swiper-pagination {
+.flex-center, header nav.top .container .right .links a, header nav.top .container .left, header nav.top .container .left .links, header nav.top .container .left .links .countries .choosed, header nav.top .container .left .links .lang, header nav.top .container .left .links .profile, header nav.top .container .left .social .links, header nav.top .container .left .settings .settings_links .choosed, header nav.bottom .container, header nav.bottom .container .right .links, header nav.bottom .container .left, header .head .container, section > .container .top_ad, section > .container .prices, section > .container .prices > div, section > .container .prices h2, section > .container .prices h4, section > .container .main_articles .mainSlider .swiper-pagination, section .economics .container > div, section .most-read .container .news > div .text, footer .links, footer .container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -917,6 +916,165 @@ section .borsa .swiper-slide .text .date {
   width: 100%;
   display: block;
 }
+section .borsa-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+section .borsa-2 .borsaSlider {
+  padding-bottom: 40px;
+  direction: ltr;
+  max-width: 100%;
+}
+section .borsa-2 .swiper-pagination {
+  bottom: 0;
+}
+section .borsa-2 .swiper-pagination .swiper-pagination-bullet {
+  background: #848484;
+  width: 30px;
+  height: 7px;
+  border-radius: 0;
+}
+section .borsa-2 .swiper-slide .img {
+  width: 100%;
+  height: 210px;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+section .borsa-2 .swiper-slide .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section .borsa-2 .swiper-slide .text {
+  margin-top: 10px;
+}
+section .borsa-2 .swiper-slide .text p {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: center;
+  color: #4f4f4f;
+}
+section .borsa-2 .swiper-slide .text .date {
+  font-size: 16px;
+  color: #64757f82;
+  text-align: center;
+  font-weight: 400;
+  width: 100%;
+  display: block;
+}
+section .economics {
+  margin-top: 2rem;
+}
+section .economics .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+}
+@media (max-width: 575.98px) {
+  section .economics .container {
+    width: 95%;
+    margin: 0;
+  }
+}
+section .economics .container > div {
+  flex-direction: column;
+}
+section .economics .container > div h4 {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  font-size: 20px;
+  color: #4f4f4f;
+  font-weight: 700;
+}
+section .economics .container > div h4 ion-icon {
+  font-size: 30px;
+}
+section .economics .container > div a {
+  text-decoration: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid #dcdcdc;
+  width: 100%;
+  transition: all .3s ease-in;
+}
+section .economics .container > div a p {
+  width: 100%;
+  padding: 0 0 0 10px;
+  color: #4f4f4f;
+  font-weight: 700;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+section .economics .container > div a .img {
+  min-width: 100px;
+  width: 100px;
+  height: 100px;
+}
+section .economics .container > div a .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section .economics .container > div a.main-article {
+  position: relative;
+  display: block;
+}
+section .economics .container > div a.main-article.eg {
+  border-top: 5px solid #eb2629;
+}
+section .economics .container > div a.main-article.ar {
+  border-top: 5px solid #0068b3;
+}
+section .economics .container > div a.main-article.wo {
+  border-top: 5px solid #fc9c46;
+}
+section .economics .container > div a.main-article.af {
+  border-top: 5px solid #e3bb00;
+}
+section .economics .container > div a.main-article .img {
+  border: none;
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  position: relative;
+}
+section .economics .container > div a.main-article .img::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #00000041;
+  z-index: 2;
+}
+section .economics .container > div a.main-article .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+section .economics .container > div a.main-article p {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 0 10px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 8px;
+  z-index: 999;
+}
+section .economics .container > div a:hover p {
+  color: #0068b3 !important;
+}
+section .economics .container > div a.main-article:hover p {
+  color: #dbf0ff !important;
+}
 section .ad {
   width: auto;
   max-width: clamp(6.25rem, calc(-2.7519rem + 14.9254vw), 9.375rem);
@@ -926,6 +1084,102 @@ section .ad {
 @media (max-width: 965px) {
   section .ad {
     display: none;
+  }
+}
+section .most-read {
+  margin-top: 2rem;
+  padding: 1.2rem;
+  background-color: #f5f9fd;
+  border-top: 1px solid #ddebfa;
+  border-bottom: 1px solid #ddebfa;
+}
+section .most-read .container .news {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+section .most-read .container .news > div {
+  text-decoration: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  transition: all .3s ease-in;
+}
+section .most-read .container .news > div p {
+  width: 100%;
+  padding: 0 0 0 10px;
+  color: #4f4f4f;
+  font-weight: 700;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+section .most-read .container .news > div .text {
+  flex-direction: column;
+  align-items: start;
+  padding: 10px;
+}
+section .most-read .container .news > div .text a {
+  text-decoration: none;
+  width: 100%;
+  padding: 0 0 0 10px;
+  color: #4f4f4f;
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+section .most-read .container .news > div .text a:first-child {
+  color: #0068b3;
+}
+section .most-read .container .news > div .img {
+  min-width: 120px;
+  width: 120px;
+  height: 120px;
+  border: 1px solid #dcdcdc;
+}
+section .most-read .container .news > div .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+footer {
+  border-top: 1px solid #dcdcdc;
+  padding: 1rem 0;
+}
+footer .links {
+  gap: 6px;
+  max-width: 400px;
+  flex-wrap: wrap;
+}
+footer .links a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #4f4f4f;
+}
+footer .links img {
+  width: 30px;
+  border-radius: 5px;
+}
+footer:first-of-type .links {
+  gap: 10px;
+}
+footer .container {
+  justify-content: space-between;
+}
+@media (max-width: 575.98px) {
+  footer .container {
+    flex-direction: column;
+  }
+}
+footer .container p {
+  margin: 0;
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    width: 100%;
+    margin: 0;
   }
 }
 
